@@ -1,0 +1,102 @@
+/* Outer container */
+
+.login-page {
+  min-height: 100vh;
+  background: url('/Schneider-Electric-Social.png') center/cover no-repeat fixed;
+  display: grid;
+  justify-content:right;
+  padding-right: 5%;
+  place-items: center;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Glass card */
+.login-card {
+  width: 350px;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  animation: fadeIn 0.7s ease-in-out;
+  text-align: center;
+}
+
+/* Title */
+.login-card h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* Subtitle */
+.subtitle {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+
+  background: rgba(20, 45, 20, 0.45);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Input focus */
+.login-card input:focus {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Error message */
+.error-msg {
+  background: rgba(255, 80, 80, 0.3);
+  color: #ffe;
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  background: #009530;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+/* Button hover */
+.login-card button:hover {
+  background: #006b01;
+  transform: translateY(-2px);
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
