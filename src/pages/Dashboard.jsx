@@ -4,8 +4,8 @@ import * as XLSX from 'xlsx'
 import './Dashboard.css'            // ⬅️ page-specific styles
 
 const FILES = {
-  raw: import.meta.env.BASE_URL + 'data/raw-alarms.xls',
-  configured: import.meta.env.BASE_URL + 'data/configured-alarms.xls',
+  raw: 'https://github.com/yadavdeepak01/Alarms_React_App/blob/main/public/data/raw-alarms.xlsx',
+  configured: 'https://github.com/yadavdeepak01/Alarms_React_App/blob/main/public/data/configured-alarms.xlsx',
 }
 
 export default function Dashboard() {
