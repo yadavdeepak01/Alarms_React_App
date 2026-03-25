@@ -3,9 +3,12 @@ import { useNavigate } from 'react-router-dom'
 import * as XLSX from 'xlsx'
 import './Dashboard.css'            // ⬅️ page-specific styles
 
+
+const BASE = import.meta.env.BASE_URL;
+
 const FILES = {
-  raw: 'https://raw.githubusercontent.com/yadavdeepak01/Alarms_React_App/main/public/data/raw-alarms.xlsx',
-  configured: 'https://raw.githubusercontent.com/yadavdeepak01/Alarms_React_App/main/public/data/configured-alarms.xlsx',
+  raw: `${BASE}data/raw-alarms.xlsx`,
+  configured: `${BASE}data/configured-alarms.xlsx`,
 };
 
 export default function Dashboard() {
